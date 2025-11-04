@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Senior React Developer",
+    "company": "Meta",
+    "location": "Remote",
+    "salary": "$120,000 - $160,000",
+    "experience": "5+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 2,
+    "title": "Backend Engineer (Node.js)",
+    "company": "Google",
+    "location": "New York, NY",
+    "salary": "$130,000 - $170,000",
+    "experience": "3+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 3,
+    "title": "Data Scientist",
+    "company": "Amazon",
+    "location": "Seattle, WA",
+    "salary": "$110,000 - $150,000",
+    "experience": "4+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "company": "Microsoft",
+    "location": "Remote",
+    "salary": "$100,000 - $140,000",
+    "experience": "3+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 5,
+    "title": "UX/UI Designer",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "salary": "$90,000 - $130,000",
+    "experience": "2+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 6,
+    "title": "Full Stack Developer",
+    "company": "Netflix",
+    "location": "Los Gatos, CA",
+    "salary": "$140,000 - $180,000",
+    "experience": "4+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 7,
+    "title": "Product Manager",
+    "company": "Tesla",
+    "location": "Austin, TX",
+    "salary": "$120,000 - $160,000",
+    "experience": "5+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 8,
+    "title": "iOS Developer",
+    "company": "Uber",
+    "location": "San Francisco, CA",
+    "salary": "$110,000 - $150,000",
+    "experience": "3+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 9,
+    "title": "Security Engineer",
+    "company": "Stripe",
+    "location": "Remote",
+    "salary": "$130,000 - $170,000",
+    "experience": "4+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 10,
+    "title": "QA Engineer",
+    "company": "Spotify",
+    "location": "New York, NY",
+    "salary": "$80,000 - $120,000",
+    "experience": "2+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 11,
+    "title": "Machine Learning Engineer",
+    "company": "OpenAI",
+    "location": "San Francisco, CA",
+    "salary": "$150,000 - $200,000",
+    "experience": "5+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 12,
+    "title": "Frontend Developer",
+    "company": "Airbnb",
+    "location": "Remote",
+    "salary": "$100,000 - $140,000",
+    "experience": "3+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 13,
+    "title": "Database Administrator",
+    "company": "Oracle",
+    "location": "Austin, TX",
+    "salary": "$90,000 - $130,000",
+    "experience": "4+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 14,
+    "title": "Cloud Architect",
+    "company": "IBM",
+    "location": "Remote",
+    "salary": "$130,000 - $170,000",
+    "experience": "6+ years",
+    "employment_type": "Full-time"
+  },
+  {
+    "id": 15,
+    "title": "Technical Lead",
+    "company": "Salesforce",
+    "location": "San Francisco, CA",
+    "salary": "$160,000 - $210,000",
+    "experience": "7+ years",
+    "employment_type": "Full-time"
+  }
+]
