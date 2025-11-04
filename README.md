@@ -1,3 +1,18 @@
+В каждом компоненте я проверяю:
+
+1) За отображение отвечает?
+2) За управление state?
+3) За обработку действий?
+
+UI вычисляется каждый рендер и зависит от state.
+С одинаковым state будет одинаковый UI.
+
+Render — это когда React вычисляет, что нужно показать.
+Commit — это когда React изменяет DOM, чтобы пользователь видел результат.
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
