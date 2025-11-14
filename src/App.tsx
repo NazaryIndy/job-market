@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.module.scss";
 import { ThemeProvider } from "@mui/material";
 import { lightTheme, darkTheme } from "./app/theme";
 import { JobsListPage } from "./pages/JobsListPage/JobsListPage";
@@ -12,13 +12,13 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <Header
-        darkMode={theme === "dark"}
-        toggle={() => {
-          setTheme(theme === "light" ? "dark" : "light");
-        }}
-      />
       <BrowserRouter>
+        <Header
+          darkMode={theme === "dark"}
+          toggle={() => {
+            setTheme(theme === "light" ? "dark" : "light");
+          }}
+        />
         <Routes>
           <Route index element={<JobsListPage />} />
           <Route path="/job/:id" element={<JobDetailsPage />} />

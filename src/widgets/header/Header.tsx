@@ -1,6 +1,7 @@
-import { FormControlLabel, Switch, Typography } from "@mui/material";
+import { FormControlLabel, Link, Switch, Typography } from "@mui/material";
 import type { FC } from "react";
-import styles from "./Header.module.scss";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 
 type HeaderProps = {
   darkMode: boolean;
@@ -11,15 +12,20 @@ const Header: FC<HeaderProps> = ({ darkMode, toggle }) => {
   const label = { inputProps: { "aria-label": "Switch theme" } };
 
   return (
-    <header className={styles.header}>
-      <Typography variant="h4" component="p" gutterBottom>
-        Job Market
-      </Typography>
-      <FormControlLabel
-        control={<Switch checked={darkMode} onChange={toggle} {...label} />}
-        label={darkMode ? "Dark Mode" : "Light Mode"}
-      />
-    </header>
+    <AppBar position="static">
+      <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Link href={"/"}>
+          <Typography variant={"h3"} sx={{ color: "#fff" }}>
+            Job Market
+          </Typography>
+        </Link>
+
+        <FormControlLabel
+          control={<Switch checked={darkMode} onChange={toggle} {...label} />}
+          label={darkMode ? "Dark Mode" : "Light Mode"}
+        />
+      </Toolbar>
+    </AppBar>
   );
 };
 
