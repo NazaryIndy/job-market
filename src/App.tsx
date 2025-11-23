@@ -1,27 +1,29 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.module.scss";
-import { ThemeProvider } from "@mui/material";
-import { lightTheme, darkTheme } from "./app/theme";
-import { JobsListPage } from "./pages/JobsListPage/JobsListPage";
-import { JobDetailsPage } from "./pages/JobDetailsPage/JobDetailsPage";
-import { Header } from "./widgets/header/Header";
-import { useState } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.module.scss';
+import { ThemeProvider } from '@mui/material';
+import { lightTheme, darkTheme } from './app/theme';
+import { JobsListPage } from './pages/JobsListPage/JobsListPage';
+import { JobDetailsPage } from './pages/JobDetailsPage/JobDetailsPage';
+import { Header } from './widgets/header/Header';
+import { useState } from 'react';
+import { FavoritesPage } from 'src/pages/FavoritesPage/FavoritesPage';
 
 function App() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <BrowserRouter>
         <Header
-          darkMode={theme === "dark"}
+          darkMode={theme === 'dark'}
           toggle={() => {
-            setTheme(theme === "light" ? "dark" : "light");
+            setTheme(theme === 'light' ? 'dark' : 'light');
           }}
         />
         <Routes>
           <Route index element={<JobsListPage />} />
-          <Route path="/job/:id" element={<JobDetailsPage />} />
+          <Route path='/job/:id' element={<JobDetailsPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
